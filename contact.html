@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>お問い合わせ｜株式会社〇〇</title>
+<meta name="description" content="施術のご相談、軍艦島プロジェクト、採用へのご応募、取材・提携のご相談はこちらから。お電話・メール・フォームで承ります。">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<a class="skip-link" href="#main">本文へスキップ</a>
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="logo" href="index.html">
+      <strong class="ph">〇〇整骨院グループ</strong>
+      <span class="ph">株式会社〇〇</span>
+    </a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="gnav" aria-label="メニューを開く"><span></span></button>
+    <nav class="gnav" id="gnav" aria-label="メインメニュー">
+      <ul>
+        <li><a href="index.html">トップ</a></li>
+        <li><a href="service.html">サービス内容</a></li>
+        <li><a href="company.html">会社概要</a></li>
+        <li><a href="gunkanjima.html">軍艦島プロジェクト</a></li>
+        <li><a href="recruit.html">採用情報</a></li>
+        <li class="nav-cta"><a href="contact.html" aria-current="page">お問い合わせ</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+  <section class="page-hero">
+    <div class="wrap">
+      <span class="label">Contact</span>
+      <h1>お問い合わせ</h1>
+      <p>施術のご相談、軍艦島プロジェクトについて、採用へのご応募、取材・提携のご相談まで承ります。</p>
+    </div>
+  </section>
+
+  <nav class="breadcrumb" aria-label="パンくずリスト">
+    <div class="wrap">
+      <ol>
+        <li><a href="index.html">トップ</a></li>
+        <li>お問い合わせ</li>
+      </ol>
+    </div>
+  </nav>
+
+  <!-- ===== 電話・メール ===== -->
+  <section class="section section--tight">
+    <div class="wrap wrap--narrow">
+      <div class="contact-cards">
+        <div class="contact-box">
+          <h3>お電話でのお問い合わせ</h3>
+          <a class="big ph" href="tel:0000000000">000-0000-0000</a>
+          <p class="note ph">受付時間：平日 9:00〜18:00（土日祝を除く）</p>
+        </div>
+        <div class="contact-box">
+          <h3>メールでのお問い合わせ</h3>
+          <a class="big ph" href="mailto:info@example.com" style="font-size:20px">info@example.com</a>
+          <p class="note">24時間受付／<span class="ph">2営業日以内</span>にご返信します。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== フォーム ===== -->
+  <section class="section section--soft">
+    <div class="wrap wrap--narrow">
+      <div class="sec-head">
+        <span class="label">Form</span>
+        <h2>お問い合わせフォーム</h2>
+        <p class="lead">
+          <span class="req">必須</span> の項目は必ずご入力ください。
+          内容を確認のうえ、担当者より<span class="ph">2営業日以内</span>にご連絡いたします。
+        </p>
+      </div>
+
+      <!--
+        ▼▼ 送信先の設定が必要です ▼▼
+        下記 <form> の action="" に、フォームの送信先URLを設定してください。
+        （例：自社サーバのメール送信プログラム、または外部フォームサービスのエンドポイント）
+        action が未設定の間は、送信ボタンを押しても送信されず、画面に案内が表示されます。
+      -->
+      <form class="form" action="" method="post" data-validate novalidate>
+
+        <div class="field">
+          <label for="f-type">お問い合わせ種別<span class="req">必須</span></label>
+          <select id="f-type" name="type" required>
+            <option value="">選択してください</option>
+            <option>施術・ご予約について</option>
+            <option>軍艦島プロジェクトについて</option>
+            <option>採用について（管理職応募・カジュアル面談）</option>
+            <option>取材・提携のご相談</option>
+            <option>その他</option>
+          </select>
+          <p class="field-error"></p>
+        </div>
+
+        <div class="field">
+          <label for="f-name">お名前<span class="req">必須</span></label>
+          <input type="text" id="f-name" name="name" autocomplete="name" placeholder="山田 太郎" required>
+          <p class="field-error"></p>
+        </div>
+
+        <div class="field">
+          <label for="f-kana">フリガナ<span class="any">任意</span></label>
+          <input type="text" id="f-kana" name="kana" placeholder="ヤマダ タロウ">
+          <p class="field-error"></p>
+        </div>
+
+        <div class="field">
+          <label for="f-company">会社名・団体名<span class="any">任意</span></label>
+          <input type="text" id="f-company" name="company" autocomplete="organization">
+          <p class="field-error"></p>
+        </div>
+
+        <div class="field">
+          <label for="f-email">メールアドレス<span class="req">必須</span></label>
+          <input type="email" id="f-email" name="email" autocomplete="email" placeholder="example@example.com" required>
+          <p class="field-error"></p>
+        </div>
+
+        <div class="field">
+          <label for="f-tel">電話番号<span class="req">必須</span></label>
+          <input type="tel" id="f-tel" name="tel" autocomplete="tel" placeholder="090-0000-0000" required>
+          <p class="hint">日中つながりやすい番号をご入力ください。</p>
+          <p class="field-error"></p>
+        </div>
+
+        <div class="field">
+          <label for="f-body">お問い合わせ内容<span class="req">必須</span></label>
+          <textarea id="f-body" name="body" placeholder="ご相談内容をできるだけ具体的にご記入ください。" required></textarea>
+          <p class="field-error"></p>
+        </div>
+
+        <div class="consent">
+          <label>
+            <input type="checkbox" name="consent" value="agree" required>
+            <span>
+              ご入力いただいた個人情報は、お問い合わせへの回答および採用選考の目的にのみ利用し、
+              ご本人の同意なく第三者に提供することはありません。上記に同意します。<span class="req">必須</span>
+            </span>
+          </label>
+        </div>
+
+        <div class="btn-row btn-row--center">
+          <button class="btn btn--gold" type="submit">この内容で送信する</button>
+        </div>
+
+        <p class="form-status">
+          現在、フォームの送信先が設定されていません。
+          お手数ですが、上記のお電話またはメールアドレスよりご連絡ください。
+        </p>
+
+        <p class="form-note">
+          ※迷惑メール対策をされている場合、当社からの返信が届かないことがあります。
+          <span class="ph">「@example.com」</span>からのメールを受信できるよう設定をお願いいたします。
+        </p>
+      </form>
+    </div>
+  </section>
+
+  <!-- ===== 個人情報の取り扱い ===== -->
+  <section class="section">
+    <div class="wrap wrap--narrow">
+      <div class="sec-head">
+        <span class="label">Privacy</span>
+        <h2>個人情報の取り扱いについて</h2>
+      </div>
+      <p class="lead-txt">
+        当社は、お客さまよりお預かりした個人情報を適切に管理し、以下の目的の範囲内で利用いたします。
+      </p>
+      <ul>
+        <li>お問い合わせへの回答およびご連絡のため</li>
+        <li>採用選考および選考結果のご連絡のため</li>
+        <li>ご依頼いただいたサービスのご提供のため</li>
+      </ul>
+      <p class="lead-txt ph">
+        ※個人情報保護方針のページを別途お持ちの場合は、ここからリンクを設置してください。
+      </p>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <strong class="ph">株式会社〇〇</strong>
+        <p>
+          <span class="ph">〒000-0000　〇〇県〇〇市〇〇町1-2-3</span><br>
+          TEL <span class="ph">000-0000-0000</span>　／　受付 <span class="ph">平日 9:00–18:00</span>
+        </p>
+      </div>
+      <nav class="footer-nav" aria-label="フッターメニュー">
+        <ul>
+          <li><a href="index.html">トップ</a></li>
+          <li><a href="gunkanjima.html">軍艦島プロジェクト</a></li>
+          <li><a href="service.html">サービス内容</a></li>
+          <li><a href="recruit.html">採用情報</a></li>
+          <li><a href="company.html">会社概要</a></li>
+          <li><a href="contact.html">お問い合わせ</a></li>
+        </ul>
+      </nav>
+    </div>
+    <p class="copyright">&copy; <span class="ph">Company Name Inc.</span> All Rights Reserved.</p>
+  </div>
+</footer>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>
